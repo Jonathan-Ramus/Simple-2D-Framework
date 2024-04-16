@@ -1,0 +1,164 @@
+\doxysection{Simple\+\_\+2\+D\+\_\+\+Framework.\+World Class Reference}
+\hypertarget{class_simple__2_d___framework_1_1_world}{}\label{class_simple__2_d___framework_1_1_world}\index{Simple\_2D\_Framework.World@{Simple\_2D\_Framework.World}}
+
+
+Contains a collection of World Objects to model a 2D Video Game World.  
+
+
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_simple__2_d___framework_1_1_world_a8cd22544ad058992dce52e55b498c974}\label{class_simple__2_d___framework_1_1_world_a8cd22544ad058992dce52e55b498c974} 
+enum {\bfseries Distance\+Measure} \{ {\bfseries Manhattan}
+, {\bfseries Chessboard}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_simple__2_d___framework_1_1_world_a435a033bfc3f6c69f6cfa6dc414373c6}\label{class_simple__2_d___framework_1_1_world_a435a033bfc3f6c69f6cfa6dc414373c6} 
+void {\bfseries Advance} ()
+\begin{DoxyCompactList}\small\item\em Advances the Game World by one time step. Each thinker is allowed to perform their turn one by one. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_simple__2_d___framework_1_1_world_a9181873e3bda80416941803f1f72ef61}{Add\+Obj}} (\mbox{\hyperlink{class_simple__2_d___framework_1_1_world_obj}{World\+Obj}} world\+Obj, int x, int y)
+\begin{DoxyCompactList}\small\item\em Adds a World Object to the World. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_simple__2_d___framework_1_1_world_abbd5e69d548f2a02bc0cc3f8fb159001}{Add\+Player}} (\mbox{\hyperlink{class_simple__2_d___framework_1_1_actor}{Actor}} actor, int x, int y)
+\begin{DoxyCompactList}\small\item\em Adds a Player World Object to the World. Other World Objects may ask the world about the Player World Object. \end{DoxyCompactList}\item 
+\Hypertarget{class_simple__2_d___framework_1_1_world_a7ef7e8fe7ec3ef98cabedb339f8e23cc}\label{class_simple__2_d___framework_1_1_world_a7ef7e8fe7ec3ef98cabedb339f8e23cc} 
+\mbox{\hyperlink{class_simple__2_d___framework_1_1_actor}{Actor}} {\bfseries Get\+Player} ()
+\item 
+void \mbox{\hyperlink{class_simple__2_d___framework_1_1_world_a0a8d7ffbcc7e92fe0add8795a49b3ac5}{Remove\+Obj}} (\mbox{\hyperlink{class_simple__2_d___framework_1_1_world_obj}{World\+Obj}} world\+Obj)
+\begin{DoxyCompactList}\small\item\em Removes a World Object from the World. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{class_simple__2_d___framework_1_1_world_obj}{World\+Obj}} $>$ \mbox{\hyperlink{class_simple__2_d___framework_1_1_world_aa9c12172050909950bd219eb72da0b6c}{Get\+World\+Objs\+In\+Range}} (int x, int y, int max\+Distance, Distance\+Measure measure)
+\begin{DoxyCompactList}\small\item\em Returns a list of World Objects within a given distance from a position in the world. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{class_simple__2_d___framework_1_1_world_obj}{World\+Obj}} $>$ \mbox{\hyperlink{class_simple__2_d___framework_1_1_world_aca06c82e99dca83ee2bbcd5acbf9fad9}{Check\+Position}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Returns a list of all World Objects at a given coordinate set. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_simple__2_d___framework_1_1_world_a93d41d15c42e3edc8cdd6921bc444b56}{Check\+Empty}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Check if a coordinate in the world is available to move to. A space is considered open if no World Object with the "{}\+Solid"{} flag set to "{}true"{} occupies the space. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Contains a collection of World Objects to model a 2D Video Game World. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_simple__2_d___framework_1_1_world_a9181873e3bda80416941803f1f72ef61}\label{class_simple__2_d___framework_1_1_world_a9181873e3bda80416941803f1f72ef61} 
+\index{Simple\_2D\_Framework.World@{Simple\_2D\_Framework.World}!AddObj@{AddObj}}
+\index{AddObj@{AddObj}!Simple\_2D\_Framework.World@{Simple\_2D\_Framework.World}}
+\doxysubsubsection{\texorpdfstring{AddObj()}{AddObj()}}
+{\footnotesize\ttfamily void Simple\+\_\+2\+D\+\_\+\+Framework.\+World.\+Add\+Obj (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_simple__2_d___framework_1_1_world_obj}{World\+Obj}}}]{world\+Obj,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Adds a World Object to the World. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em world\+Obj} & The World Object to be added\\
+\hline
+{\em x} & X coordinate where to add\\
+\hline
+{\em y} & Y coordinate where to add\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_simple__2_d___framework_1_1_world_abbd5e69d548f2a02bc0cc3f8fb159001}\label{class_simple__2_d___framework_1_1_world_abbd5e69d548f2a02bc0cc3f8fb159001} 
+\index{Simple\_2D\_Framework.World@{Simple\_2D\_Framework.World}!AddPlayer@{AddPlayer}}
+\index{AddPlayer@{AddPlayer}!Simple\_2D\_Framework.World@{Simple\_2D\_Framework.World}}
+\doxysubsubsection{\texorpdfstring{AddPlayer()}{AddPlayer()}}
+{\footnotesize\ttfamily void Simple\+\_\+2\+D\+\_\+\+Framework.\+World.\+Add\+Player (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_simple__2_d___framework_1_1_actor}{Actor}}}]{actor,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Adds a Player World Object to the World. Other World Objects may ask the world about the Player World Object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em actor} & The Player Object to be added\\
+\hline
+{\em x} & X coordinate where to add\\
+\hline
+{\em y} & Y coordinate where to add\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_simple__2_d___framework_1_1_world_a93d41d15c42e3edc8cdd6921bc444b56}\label{class_simple__2_d___framework_1_1_world_a93d41d15c42e3edc8cdd6921bc444b56} 
+\index{Simple\_2D\_Framework.World@{Simple\_2D\_Framework.World}!CheckEmpty@{CheckEmpty}}
+\index{CheckEmpty@{CheckEmpty}!Simple\_2D\_Framework.World@{Simple\_2D\_Framework.World}}
+\doxysubsubsection{\texorpdfstring{CheckEmpty()}{CheckEmpty()}}
+{\footnotesize\ttfamily bool Simple\+\_\+2\+D\+\_\+\+Framework.\+World.\+Check\+Empty (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Check if a coordinate in the world is available to move to. A space is considered open if no World Object with the "{}\+Solid"{} flag set to "{}true"{} occupies the space. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & X coordinate to check\\
+\hline
+{\em y} & Y coordinate to check\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+"{}true"{} if space is available, "{}false"{} otherwise
+\end{DoxyReturn}
+\Hypertarget{class_simple__2_d___framework_1_1_world_aca06c82e99dca83ee2bbcd5acbf9fad9}\label{class_simple__2_d___framework_1_1_world_aca06c82e99dca83ee2bbcd5acbf9fad9} 
+\index{Simple\_2D\_Framework.World@{Simple\_2D\_Framework.World}!CheckPosition@{CheckPosition}}
+\index{CheckPosition@{CheckPosition}!Simple\_2D\_Framework.World@{Simple\_2D\_Framework.World}}
+\doxysubsubsection{\texorpdfstring{CheckPosition()}{CheckPosition()}}
+{\footnotesize\ttfamily List$<$ \mbox{\hyperlink{class_simple__2_d___framework_1_1_world_obj}{World\+Obj}} $>$ Simple\+\_\+2\+D\+\_\+\+Framework.\+World.\+Check\+Position (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Returns a list of all World Objects at a given coordinate set. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & X coordinate to check\\
+\hline
+{\em y} & Y coordinate to check\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+List of World\+Obj
+\end{DoxyReturn}
+\Hypertarget{class_simple__2_d___framework_1_1_world_aa9c12172050909950bd219eb72da0b6c}\label{class_simple__2_d___framework_1_1_world_aa9c12172050909950bd219eb72da0b6c} 
+\index{Simple\_2D\_Framework.World@{Simple\_2D\_Framework.World}!GetWorldObjsInRange@{GetWorldObjsInRange}}
+\index{GetWorldObjsInRange@{GetWorldObjsInRange}!Simple\_2D\_Framework.World@{Simple\_2D\_Framework.World}}
+\doxysubsubsection{\texorpdfstring{GetWorldObjsInRange()}{GetWorldObjsInRange()}}
+{\footnotesize\ttfamily List$<$ \mbox{\hyperlink{class_simple__2_d___framework_1_1_world_obj}{World\+Obj}} $>$ Simple\+\_\+2\+D\+\_\+\+Framework.\+World.\+Get\+World\+Objs\+In\+Range (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{max\+Distance,  }\item[{Distance\+Measure}]{measure }\end{DoxyParamCaption})}
+
+
+
+Returns a list of World Objects within a given distance from a position in the world. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & X coordinate to search from\\
+\hline
+{\em y} & Y coordinate to search from\\
+\hline
+{\em max\+Distance} & Maximum distance to search for\\
+\hline
+{\em measure} & The type of distance measure to be used\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+List of World\+Obj
+\end{DoxyReturn}
+\Hypertarget{class_simple__2_d___framework_1_1_world_a0a8d7ffbcc7e92fe0add8795a49b3ac5}\label{class_simple__2_d___framework_1_1_world_a0a8d7ffbcc7e92fe0add8795a49b3ac5} 
+\index{Simple\_2D\_Framework.World@{Simple\_2D\_Framework.World}!RemoveObj@{RemoveObj}}
+\index{RemoveObj@{RemoveObj}!Simple\_2D\_Framework.World@{Simple\_2D\_Framework.World}}
+\doxysubsubsection{\texorpdfstring{RemoveObj()}{RemoveObj()}}
+{\footnotesize\ttfamily void Simple\+\_\+2\+D\+\_\+\+Framework.\+World.\+Remove\+Obj (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_simple__2_d___framework_1_1_world_obj}{World\+Obj}}}]{world\+Obj }\end{DoxyParamCaption})}
+
+
+
+Removes a World Object from the World. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em world\+Obj} & The World Object to be removed\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/ramus/source/repos/\+Simple 2\+D Framework/\+Simple 2\+D Framework/World.\+cs\end{DoxyCompactItemize}

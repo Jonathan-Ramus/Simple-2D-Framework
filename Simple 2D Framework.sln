@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34322.80
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Simple 2D Framework", "Simple 2D Framework\Simple 2D Framework.csproj", "{4F7801AC-CCF0-4AA8-AD36-58B685DC1C31}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4F7801AC-CCF0-4AA8-AD36-58B685DC1C31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F7801AC-CCF0-4AA8-AD36-58B685DC1C31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F7801AC-CCF0-4AA8-AD36-58B685DC1C31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F7801AC-CCF0-4AA8-AD36-58B685DC1C31}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E962E602-24E2-4846-83ED-5D3B58FDC8FE}
+	EndGlobalSection
+EndGlobal

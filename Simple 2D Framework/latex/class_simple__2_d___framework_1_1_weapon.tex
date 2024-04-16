@@ -1,0 +1,83 @@
+\doxysection{Simple\+\_\+2\+D\+\_\+\+Framework.\+Weapon Class Reference}
+\hypertarget{class_simple__2_d___framework_1_1_weapon}{}\label{class_simple__2_d___framework_1_1_weapon}\index{Simple\_2D\_Framework.Weapon@{Simple\_2D\_Framework.Weapon}}
+
+
+Represents a weapon with which an Actor can deal damage.  
+
+
+Inheritance diagram for Simple\+\_\+2\+D\+\_\+\+Framework.\+Weapon\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_simple__2_d___framework_1_1_weapon}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \mbox{\hyperlink{class_simple__2_d___framework_1_1_actor}{Actor}} $>$ \mbox{\hyperlink{class_simple__2_d___framework_1_1_weapon_a43cee3480a88db7667017b3b498ae80c}{Get\+Targets}} ()
+\begin{DoxyCompactList}\small\item\em A function to get a list of targets in range of a weapon. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_simple__2_d___framework_1_1_weapon_ad580a29f645d937dd63b6a49160683bd}{Attack}} (\mbox{\hyperlink{class_simple__2_d___framework_1_1_actor}{Actor}} target)
+\begin{DoxyCompactList}\small\item\em Attack a specified target with this weapon. \end{DoxyCompactList}\item 
+\Hypertarget{class_simple__2_d___framework_1_1_weapon_a71e5dd1e3144428e139537fe6764e77e}\label{class_simple__2_d___framework_1_1_weapon_a71e5dd1e3144428e139537fe6764e77e} 
+virtual void {\bfseries On\+Equip} ()
+\item 
+\Hypertarget{class_simple__2_d___framework_1_1_weapon_ac4d99e80233c5065b1632366aafaea23}\label{class_simple__2_d___framework_1_1_weapon_ac4d99e80233c5065b1632366aafaea23} 
+virtual void {\bfseries On\+Unequip} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_simple__2_d___framework_1_1_item}{Simple\+\_\+2\+D\+\_\+\+Framework.\+Item}}}
+\begin{DoxyCompactItemize}
+\item 
+string {\bfseries Info} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_simple__2_d___framework_1_1_weapon_a3d9a5910f32804bcba4aadcfebbf23e3}\label{class_simple__2_d___framework_1_1_weapon_a3d9a5910f32804bcba4aadcfebbf23e3} 
+\mbox{\hyperlink{class_simple__2_d___framework_1_1_actor}{Actor}}? {\bfseries Owner}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{class_simple__2_d___framework_1_1_item}{Simple\+\_\+2\+D\+\_\+\+Framework.\+Item}}}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries Type}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+string? {\bfseries Name}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a weapon with which an Actor can deal damage. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_simple__2_d___framework_1_1_weapon_ad580a29f645d937dd63b6a49160683bd}\label{class_simple__2_d___framework_1_1_weapon_ad580a29f645d937dd63b6a49160683bd} 
+\index{Simple\_2D\_Framework.Weapon@{Simple\_2D\_Framework.Weapon}!Attack@{Attack}}
+\index{Attack@{Attack}!Simple\_2D\_Framework.Weapon@{Simple\_2D\_Framework.Weapon}}
+\doxysubsubsection{\texorpdfstring{Attack()}{Attack()}}
+{\footnotesize\ttfamily void Simple\+\_\+2\+D\+\_\+\+Framework.\+Weapon.\+Attack (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_simple__2_d___framework_1_1_actor}{Actor}}}]{target }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+
+
+Attack a specified target with this weapon. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & The target to attack\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_simple__2_d___framework_1_1_weapon_a43cee3480a88db7667017b3b498ae80c}\label{class_simple__2_d___framework_1_1_weapon_a43cee3480a88db7667017b3b498ae80c} 
+\index{Simple\_2D\_Framework.Weapon@{Simple\_2D\_Framework.Weapon}!GetTargets@{GetTargets}}
+\index{GetTargets@{GetTargets}!Simple\_2D\_Framework.Weapon@{Simple\_2D\_Framework.Weapon}}
+\doxysubsubsection{\texorpdfstring{GetTargets()}{GetTargets()}}
+{\footnotesize\ttfamily List$<$ \mbox{\hyperlink{class_simple__2_d___framework_1_1_actor}{Actor}} $>$ Simple\+\_\+2\+D\+\_\+\+Framework.\+Weapon.\+Get\+Targets (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+
+
+A function to get a list of targets in range of a weapon. 
+
+\begin{DoxyReturn}{Returns}
+List of targets in range
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/ramus/source/repos/\+Simple 2\+D Framework/\+Simple 2\+D Framework/Weapon.\+cs\end{DoxyCompactItemize}
